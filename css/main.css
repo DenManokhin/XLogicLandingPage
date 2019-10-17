@@ -1,0 +1,136 @@
+/* Header */
+
+.navbar{ 
+    background: #0B0C10; 
+}
+
+.nav-link , .navbar-brand{ 
+    color: #C5C6C7; 
+    cursor: pointer; 
+}
+
+.nav-link:hover{
+    background: #C5C6C7; 
+    color: #0B0C10;  
+}
+
+/* Modify header width */
+
+.navbar {
+    min-height: 80px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 23px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+    }
+    
+}
+
+.logo {
+    height: 70px;
+}
+
+/* Hamburger menu button */
+
+.animated-navbar-toggler-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-navbar-toggler-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+    background: #ffffff;
+}
+
+.animated-navbar-toggler-icon span:nth-child(1) {
+    top: 0px;
+    
+}
+
+.animated-navbar-toggler-icon span:nth-child(2), .animated-navbar-toggler-icon span:nth-child(3) {
+    top: 10px;
+    
+}
+
+.animated-navbar-toggler-icon span:nth-child(4) {
+    top: 20px;
+    
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    
+}
+
+.animated-navbar-toggler-icon.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+    
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* End of Header */
