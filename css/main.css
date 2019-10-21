@@ -221,21 +221,40 @@
 /* End of blog section */
 
 /* Projects section */
-.img-row {
-    height: 400px;
+.first-project {
+    height: 400px !important;
 }
 
-.img-row:nth-of-type(2) {
-    height: 200px;
-}
-
-.img-row .col-md-4 {
-    padding: 0;
+@media screen and (max-width: 768px) {
+    .first-project {
+        height: 200px !important;
+    }
 }
 
 .project {
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
 }
 
+.img-hover {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(69, 162, 157, 0);
+    color: rgba(255, 255, 255, 0);
+    transition: background-color .25s ease-in-out;
+    transition: color .25s ease-in-out;
+}
+
+.img-hover:hover {
+    background-color: rgba(69, 162, 157, 0.5);
+    color: rgba(255, 255, 255, 1);
+}
+
+.img-hover > h4 {
+    margin: auto;
+}
+/* End of projects section */
