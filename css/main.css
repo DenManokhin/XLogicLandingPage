@@ -12,6 +12,10 @@
     color: #C5C6C7;
 }
 
+.section-heading {
+    margin-top: 20px;
+}
+
 /* Header */
 
 .navbar{ 
@@ -167,6 +171,10 @@
 /* Home section end */
 
 /* About section */
+#about {
+    padding-top: 1rem;
+}
+
 .about-item {
     margin-top: 70px;
     margin-bottom: 70px;
@@ -201,3 +209,14 @@
     color: #000000;
 }
 /* About section end */
+
+/* Blog section */
+.carousel-caption {
+    background-color: rgba(128,128,128,0.7);
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption h4 {
+        font-size: 1rem;
+    }
+}
