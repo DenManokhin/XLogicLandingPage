@@ -1,5 +1,3 @@
-/* Common styles */
-
 .bg-darkblue {
     background: #0B0C10;
 }
@@ -220,3 +218,24 @@
         font-size: 1rem;
     }
 }
+/* End of blog section */
+
+/* Projects section */
+.img-row {
+    height: 400px;
+}
+
+.img-row:nth-of-type(2) {
+    height: 200px;
+}
+
+.img-row .col-md-4 {
+    padding: 0;
+}
+
+.project {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
