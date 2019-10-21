@@ -14,9 +14,9 @@
   <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <img class="logo" src="images/Logo.png" alt="XLogic">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="collapsingNavbar">
                     <ul class="nav navbar-nav ml-auto mr-4">
                         <li class="nav-item">
-                            <a class="nav-link" data-value="about" href="#">About</a>
+                            <a class="nav-link" data-value="about" href="#about">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-value="blog" href="#">Blog</a>
@@ -52,7 +52,52 @@
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <button type="button" id="welcomeBtn" class="btn btn-lg">Learn More</button>
+                        <a role="button" id="welcomeBtn" class="btn btn-lg" href="#about">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="about-item">
+                            <div class="about-counter">
+                                <p class="counter-count">789</p>
+                            </div>
+                            <p class="about-sub">Employees</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="about-item">
+                            <div class="about-counter">
+                                <p class="counter-count">10</p>
+                            </div>
+                            <p class="about-sub">Years of market experience</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="about-item">
+                            <div class="about-counter">
+                                <p class="counter-count">935</p>
+                            </div>
+                            <p class="about-sub">Customers</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <div class="about-item">
+                            <div class="about-counter">
+                                <span class="counter-count">95</span><span>%</span>
+                            </div>
+                            <p class="about-sub">of Customers recommend us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="about-text text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -60,7 +105,7 @@
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script	src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
