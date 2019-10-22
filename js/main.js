@@ -24,7 +24,7 @@ $(document).ready(function () {
         var elemTop = $elem.offset().top;
         var elemBottom = elemTop + $elem.height();
 
-        var isVisible = ((elemBottom > docViewTop) && (elemTop < docViewBottom));
+        var isVisible = elemTop < docViewBottom;
         return isVisible;
     }
     
