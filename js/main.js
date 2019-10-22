@@ -16,11 +16,7 @@ $(document).ready(function () {
         $('.nav li:first-child').addClass('active');
     });
 
-    // About section counter animation
-    var $window = $(window);
-    var $elem = $('#about');
-    var counterFinished = true;
-
+    // Function to check if element is in viewport
     function isScrolledIntoView($elem, $window) {
         var docViewTop = $window.scrollTop();
         var docViewBottom = docViewTop + $window.height();
@@ -28,10 +24,15 @@ $(document).ready(function () {
         var elemTop = $elem.offset().top;
         var elemBottom = elemTop + $elem.height();
 
-        var isVisible = ((elemBottom > docViewTop) && (elemTop < docViewBottom));
+        var isVisible = elemTop < docViewBottom;
         return isVisible;
     }
     
+    // About section counter animation
+    var $window = $(window);
+    var $elem = $('#about');
+    var counterFinished = true;
+
     var wasVisible = isScrolledIntoView($elem, $window);
 
     $(document).on("scroll", function () {
@@ -62,5 +63,8 @@ $(document).ready(function () {
             scrollTop: $(href).offset().top
         }, 800);
     });
+    
+    // Initialize Animate on Scroll library
+    AOS.init();
 });
 

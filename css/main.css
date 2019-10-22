@@ -231,6 +231,10 @@
     }
 }
 
+.img-row {
+    overflow-x: hidden;
+}
+
 .project {
     height: 200px;
     background-size: cover;
