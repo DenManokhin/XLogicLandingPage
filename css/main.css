@@ -268,3 +268,27 @@ screen and (max-height: 768px) {
     margin: auto;
 }
 /* End of projects section */
+
+/* Footer */
+.nav-footer {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-link {
+    color: #C5C6C7;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #F1F1F1;
+}
+
+.soc-btn {
+    font-size: 2rem;
+    margin-right: 1rem;
+} 
+
+.soc-btn:hover {
+    color: #F1F1F1;
+}
