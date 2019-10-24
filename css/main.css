@@ -277,7 +277,6 @@ screen and (max-height: 768px) {
 
 .footer-link {
     color: #C5C6C7;
-    margin-bottom: 1rem;
 }
 
 .footer-link:hover {
@@ -288,4 +287,8 @@ screen and (max-height: 768px) {
 .soc-btn {
     font-size: 2rem;
     margin-right: 1rem;
+} 
+
+.soc-btn:hover {
+    color: #F1F1F1;
 }
