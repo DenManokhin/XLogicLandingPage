@@ -6,10 +6,6 @@
     color: #04D6B3;
 }
 
-.text-wg {
-    color: #F1F1F1;
-}
-
 .section-heading {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -27,7 +23,6 @@ section {
     padding-bottom: 1rem;
 }
 
-
 /* Header */
 
 .navbar{ 
@@ -38,6 +33,9 @@ section {
     font-size: 1rem;
     color: #F1F1F1; 
     cursor: pointer; 
+    -webkit-transition: color .25s ease-in-out;
+    -o-transition: color .25s ease-in-out;
+    transition: color .25s ease-in-out;
 }
 
 .nav-link:hover{
@@ -60,11 +58,9 @@ section {
     position: relative;
     margin: 0px;
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -79,11 +75,9 @@ section {
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
     -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
     background: #f1f1f1;
@@ -113,17 +107,15 @@ section {
 
 .animated-navbar-toggler-icon.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
     
 }
 
 .animated-navbar-toggler-icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
     
 }
 
@@ -143,12 +135,12 @@ section {
 
 /* Home section */
 
-.scroll .home {
-    transform: scale(0.98);
-}
- 
 .home {
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     background-attachment: fixed;
     background-image: url("../images/background.png");
     background-position: center;
@@ -156,11 +148,6 @@ section {
     background-size: cover;
 }
  
- 
-.home .container-fluid {
-    z-index: 10;
-}
-
 #welcomeBtn {
     background: none;
     color: #F1F1F1;
@@ -267,8 +254,12 @@ screen and (max-height: 768px) {
     text-align: center;
     background-color: rgba(4, 214, 179, 0);
     color: rgba(255, 255, 255, 0);
-    transition: background-color .25s ease-in-out;
-    transition: color .25s ease-in-out;
+    -webkit-transition: background-color .35s ease-in-out;
+    -o-transition: background-color .35s ease-in-out;
+    transition: background-color .35s ease-in-out;
+    -webkit-transition: color .45s ease-in-out;
+    -o-transition: color .45s ease-in-out;
+    transition: color .45s ease-in-out;
 }
 
 .img-hover:hover {
