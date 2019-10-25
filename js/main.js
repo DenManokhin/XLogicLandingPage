@@ -60,7 +60,7 @@ $(document).ready(function () {
         var href = $(this).attr("href");
         console.log(href);
         $('html, body').animate({
-            scrollTop: $(href).offset().top
+            scrollTop: $(href).offset().top - 76
         }, 800);
     });
     
