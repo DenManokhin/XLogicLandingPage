@@ -276,7 +276,7 @@ screen and (max-height: 768px) {
     color: rgba(255, 255, 255, 1);
 }
 
-.img-hover > h4 {
+.img-hover > div {
     margin: auto;
 }
 /* End of projects section */
