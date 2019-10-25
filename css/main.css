@@ -1,13 +1,13 @@
-.bg-darkblue {
-    background: #0B0C10;
+.bg-aquamarine {
+    background: #04D6B3;
 }
 
-.bg-lightgray {
-    background: #EAECF0;
+.text-aquamarine {
+    color: #04D6B3;
 }
 
-.text-gray {
-    color: #C5C6C7;
+.text-wg {
+    color: #F1F1F1;
 }
 
 .section-heading {
@@ -277,7 +277,13 @@ screen and (max-height: 768px) {
 /* End of projects section */
 
 /* Contact form section */
+.contact-form {
+    border: 1px solid #04D6B3;
+}
 
+.btn-contact:hover {
+    background-color: #04FFBC;
+}
 /* End of contact form section */
 
 /* Footer */
