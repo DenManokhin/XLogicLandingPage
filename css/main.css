@@ -26,6 +26,7 @@ body {
 }
 
 .nav-link , .navbar-brand{ 
+    font-size: 1rem;
     color: #C5C6C7; 
     cursor: pointer; 
 }
@@ -34,7 +35,7 @@ body {
     color: #F1F1F1;  
 }
 
-.nav-link:active{
+.nav-link.active{
     color: #F1F1F1;
 }
 
