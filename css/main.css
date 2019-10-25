@@ -193,6 +193,7 @@ screen and (max-height: 768px) {
 
 .about-counter {
     font-size: 18px;
+    font-weight: bold;
     background-color: #00B3E7;
     border-radius: 50%;
     position: relative;
@@ -210,9 +211,8 @@ screen and (max-height: 768px) {
 }
 
 .about-sub {
-    font-size: 24px;
+    font-size: 18px;
     color: #000000;
-    line-height: 34px;
 }
 
 .about-text {
