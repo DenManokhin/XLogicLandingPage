@@ -222,8 +222,13 @@ screen and (max-height: 768px) {
 /* About section end */
 
 /* Blog section */
+.carousel-inner {
+    border-radius: 0.25rem;
+}
+
 .carousel-caption {
-    background-color: rgba(128,128,128,0.7);
+    background-color: rgba(4, 214, 179, 0.7);
+    border-radius: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
